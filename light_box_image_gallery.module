@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Light box Image Gallery feature.
+ */
+
+include_once 'light_box_image_gallery.features.inc';
