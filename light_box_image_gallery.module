@@ -5,3 +5,33 @@
  */
 
 include_once 'light_box_image_gallery.features.inc';
+
+/**
+* Implements hook_library().
+*
+* Adds the Light Box Image Gallery Bean CSS.
+*/
+function light_box_image_gallery_library() {
+  $libraries['light_box_image_gallery'] = array(
+    'title' => 'Light box image gallery CSS Library',
+    'version' => '1.0',
+    'css' => array(
+      drupal_get_path('module', 'light_box_image_gallery') . '/css/light_box_image_gallery.css' => array(
+        'type' => 'file',
+        'media' => 'screen',
+      ),
+    ), 
+  );
+  return $libraries;
+}
+
+/**
+ * Implements template_preprocess_entity().
+ * @param array $var a keyed array with the entity data and meta data.
+ */
+function light_box_image_gallery_preprocess_entity(&$var) {
+  if ($var['entity_type'] == 'bean' && $var['elements']['#bundle'] == 'ott_image_gallery')
+  {
+    drupal_add_library('light_box_image_gallery', 'light_box_image_gallery'); 
+  }
+}
