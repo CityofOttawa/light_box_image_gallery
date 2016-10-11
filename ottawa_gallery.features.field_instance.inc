@@ -169,7 +169,7 @@ function ottawa_gallery_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_ott_gallery_body_top',
     'label' => 'Body Top',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
