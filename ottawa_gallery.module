@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ottawa Gallery feature.
+ */
+
+include_once 'ottawa_gallery.features.inc';
