@@ -20,7 +20,7 @@ function ottawa_gallery_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'magnific_popup',
         'settings' => array(
-          'gallery_style' => 'all_items',
+          'gallery_style' => 'no_gallery',
           'thumbnail_field' => 'field_gallery_images',
           'thumbnail_style' => 'magnific_popup_thumbnail',
         ),
