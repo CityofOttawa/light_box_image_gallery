@@ -29,3 +29,4 @@ features[variable][] = menu_parent_ott_gallery
 features[variable][] = node_options_ott_gallery
 features[variable][] = node_preview_ott_gallery
 features[variable][] = node_submitted_ott_gallery
+features[variable][] = panelizer_defaults_node_ott_gallery
