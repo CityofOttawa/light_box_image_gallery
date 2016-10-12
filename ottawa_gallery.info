@@ -1,6 +1,6 @@
 name = Ottawa Gallery
 core = 7.x
-package = Features
+package = City of Ottawa
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
