@@ -34,6 +34,9 @@ function ottawa_gallery_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'page teaser' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
