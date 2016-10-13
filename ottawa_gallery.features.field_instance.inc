@@ -291,7 +291,7 @@ function ottawa_gallery_field_default_field_instances() {
         'module' => 'title',
         'settings' => array(
           'title_class' => '',
-          'title_link' => 'content',
+          'title_link' => '',
           'title_style' => 'h2',
         ),
         'type' => 'title_linked',
