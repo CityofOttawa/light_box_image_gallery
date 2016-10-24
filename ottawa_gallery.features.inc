@@ -21,7 +21,7 @@ function ottawa_gallery_node_info() {
     'ott_gallery' => array(
       'name' => t('Gallery'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('This content type holds the "Gallery" content type - which allows a Gallery of images to be opened in a modal. '),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

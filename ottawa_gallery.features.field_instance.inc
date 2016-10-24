@@ -16,6 +16,12 @@ function ottawa_gallery_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'article teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'magnific_popup',
@@ -44,6 +50,7 @@ function ottawa_gallery_field_default_field_instances() {
       'entity_translation_sync' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'image_field_caption' => 1,
       'max_filesize' => '2 MB',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -66,6 +73,7 @@ function ottawa_gallery_field_default_field_instances() {
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
           'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
+          'media_internet' => 0,
           'upload' => 'upload',
         ),
       ),
@@ -81,6 +89,12 @@ function ottawa_gallery_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'article teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -149,6 +163,15 @@ function ottawa_gallery_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'article teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 300,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -222,6 +245,16 @@ function ottawa_gallery_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'article teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'primary_image_teaser',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -249,6 +282,7 @@ function ottawa_gallery_field_default_field_instances() {
       'entity_translation_sync' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'image_field_caption' => 0,
       'max_filesize' => '2 MB',
       'max_resolution' => '1564x680',
       'min_resolution' => '1564x680',
@@ -286,12 +320,23 @@ function ottawa_gallery_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
-      'default' => array(
+      'article teaser' => array(
         'label' => 'hidden',
         'module' => 'title',
         'settings' => array(
           'title_class' => '',
           'title_link' => 'content',
+          'title_style' => 'h2',
+        ),
+        'type' => 'title_linked',
+        'weight' => 1,
+      ),
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'title',
+        'settings' => array(
+          'title_class' => '',
+          'title_link' => '',
           'title_style' => 'h2',
         ),
         'type' => 'title_linked',
