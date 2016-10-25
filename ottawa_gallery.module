@@ -5,3 +5,14 @@
  */
 
 include_once 'ottawa_gallery.features.inc';
+
+function ottawa_gallery_theme($existing, $type, $theme, $path) {
+  $theme = array();
+  $theme['field__field_gallery_images'] = array(
+    'render element' => 'content',
+    'base hook' => 'field',
+    'template' => 'field--field-gallery-images',
+    'path' => drupal_get_path('module', 'ottawa_gallery') . '/templates',
+   );
+  return $theme;
+}
