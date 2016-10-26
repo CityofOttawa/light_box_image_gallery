@@ -5,7 +5,9 @@
 <?php foreach ($items as $delta => $item) : ?>
   <?php
     module_load_include('inc', 'pathauto', 'pathauto');
-    $divid = pathauto_cleanstring($item['#item']['field_file_image_title_text']['und'][0]['value']);
+    if(isset($item['#item']['field_file_image_title_text'])) {
+      $divid = pathauto_cleanstring($item['#item']['field_file_image_title_text']['und'][0]['value']);
+    }
   ?>
   <?php if(isset($item['#item']['uri'])): ?>
     <button type="button" class="toggle-button" data-toggle="modal" data-target="#<?php print $divid; ?>">
@@ -25,8 +27,8 @@
           <?php if(isset($item['#item']['uri'])): ?>
             <p class="image"><?php print theme('image', array('path' => $item['#item']['uri'])); ?></p>
           <?php endif; ?>
-          <?php if(isset($item['#item']['field_ott_image_caption'])): ?>
-            <p><?php print $item['#item']['field_ott_image_caption'][$lang_code][0]['value']; ?></p>
+          <?php if(isset($item['#item']['field_ottawa_image_caption'])): ?>
+            <p><?php print $item['#item']['field_ottawa_image_caption']['und'][0]['value']; ?></p>
           <?php endif; ?>
         </div>
       </div>

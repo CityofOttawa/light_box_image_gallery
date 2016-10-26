@@ -4,7 +4,6 @@ package = City of Ottawa
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
-dependencies[] = magnific_popup
 dependencies[] = media
 dependencies[] = ottawa_base
 dependencies[] = strongarm
