@@ -15,7 +15,7 @@
     <?php else: ?>
     <button type="button" class="toggle-button" data-toggle="modal">
     <?php endif; ?>
-      <p class="image"><?php print theme('image', array('path' => $item['#item']['uri'])); ?></p>
+      <?php print theme('image', array('path' => $item['#item']['uri'])); ?>
     </button>
   <?php endif; ?>
   <?php if(isset($divid)): ?>
