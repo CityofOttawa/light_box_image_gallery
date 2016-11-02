@@ -14,9 +14,9 @@
     <button type="button" class="toggle-button" data-toggle="modal" data-target="#<?php print $divid; ?>">
     <?php else: ?>
     <button type="button" class="toggle-button" data-toggle="modal">
+    <?php endif; ?>
       <p class="image"><?php print theme('image', array('path' => $item['#item']['uri'])); ?></p>
     </button>
-    <?php endif; ?>
   <?php endif; ?>
   <?php if(isset($divid)): ?>
   <div class="modal fade" id="<?php print $divid; ?>" tabindex="-1" role="dialog">
