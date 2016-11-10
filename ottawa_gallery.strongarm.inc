@@ -13,6 +13,33 @@ function ottawa_gallery_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_hide_translation_links_ott_gallery';
+  $strongarm->value = 1;
+  $export['entity_translation_hide_translation_links_ott_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_node_metadata_ott_gallery';
+  $strongarm->value = '0';
+  $export['entity_translation_node_metadata_ott_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entity_translation_settings_node__ott_gallery';
+  $strongarm->value = array(
+    'default_language' => 'und',
+    'hide_language_selector' => 1,
+    'exclude_language_none' => 1,
+    'lock_language' => 1,
+    'shared_fields_original_only' => 0,
+  );
+  $export['entity_translation_settings_node__ott_gallery'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__ott_gallery';
   $strongarm->value = array(
     'view_modes' => array(
@@ -37,6 +64,12 @@ function ottawa_gallery_strongarm() {
       'page teaser' => array(
         'custom_settings' => FALSE,
       ),
+      'pageteaser' => array(
+        'custom_settings' => FALSE,
+      ),
+      'eventsteaser' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -44,10 +77,16 @@ function ottawa_gallery_strongarm() {
           'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '3',
+          'weight' => '5',
         ),
         'language' => array(
           'weight' => '2',
+        ),
+        'metatags' => array(
+          'weight' => '7',
+        ),
+        'redirect' => array(
+          'weight' => '6',
         ),
       ),
       'display' => array(),

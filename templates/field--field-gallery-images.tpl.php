@@ -5,24 +5,13 @@
 <?php foreach ($items as $delta => $item) : ?>
   <?php
     module_load_include('inc', 'pathauto', 'pathauto');
-    if(isset($item['#item']['field_file_image_title_text']['und'][0]['value'])) {
-      $divid = pathauto_cleanstring($item['#item']['field_file_image_title_text']['und'][0]['value']);
-    }
   ?>
   <?php if(isset($item['#item']['uri'])): ?>
-    <?php if(isset($divid)): ?>
-    <button type="button" class="toggle-button" data-toggle="modal" data-target="#<?php print $divid; ?>">
-    <?php else: ?>
-    <button type="button" class="toggle-button" data-toggle="modal">
-    <?php endif; ?>
+    <button type="button" class="toggle-button" data-toggle="modal" data-target="#<?php print $delta; ?>">
       <?php print theme('image', array('path' => $item['#item']['uri'])); ?>
     </button>
   <?php endif; ?>
-  <?php if(isset($divid)): ?>
-  <div class="modal fade" id="<?php print $divid; ?>" tabindex="-1" role="dialog">
-  <?php else: ?>
-  <div class="modal fade" tabindex="-1" role="dialog">
-  <?php endif; ?>
+  <div class="modal fade" id="<?php print $delta; ?>" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">

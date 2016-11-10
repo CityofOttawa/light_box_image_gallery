@@ -81,7 +81,7 @@ function ottawa_gallery_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 5,
+      'weight' => 3,
     ),
   );
 
@@ -156,7 +156,7 @@ function ottawa_gallery_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 4,
     ),
   );
 
@@ -194,11 +194,12 @@ function ottawa_gallery_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_ott_gallery_body_top',
     'label' => 'Body Top',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
           'article_ckeditor' => 0,
+          'long_page_ckeditor' => 0,
           'page_ckeditor' => 'page_ckeditor',
           'plain_text' => 0,
         ),
@@ -208,6 +209,9 @@ function ottawa_gallery_field_default_field_instances() {
           'formats' => array(
             'article_ckeditor' => array(
               'weight' => -9,
+            ),
+            'long_page_ckeditor' => array(
+              'weight' => 0,
             ),
             'page_ckeditor' => array(
               'weight' => -10,
@@ -236,7 +240,7 @@ function ottawa_gallery_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 2,
     ),
   );
 
