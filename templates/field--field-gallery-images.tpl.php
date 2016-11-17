@@ -8,7 +8,9 @@
   ?>
   <?php if(isset($item['#item']['uri'])): ?>
     <button type="button" class="toggle-button" data-toggle="modal" data-target="#<?php print $delta; ?>">
-      <?php print theme('image', array('path' => $item['#item']['uri'])); ?>
+      <?php
+        print theme('image', array('alt' => $item['#item']['alt'], 'title' => $item['#item']['title'], 'path' => $item['#item']['uri']));
+      ?>
     </button>
   <?php endif; ?>
   <div class="modal fade" id="<?php print $delta; ?>" tabindex="-1" role="dialog">
