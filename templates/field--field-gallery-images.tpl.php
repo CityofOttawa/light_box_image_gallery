@@ -24,7 +24,11 @@
         </div>
         <div class="modal-body">
           <?php if(isset($item['#item']['uri'])): ?>
-            <p class="image"><?php print theme('image', array('path' => $item['#item']['uri'])); ?></p>
+            <p class="image">
+              <?php
+                print theme('image', array('alt' => $item['#item']['alt'], 'title' => $item['#item']['title'], 'path' => $item['#item']['uri']));
+              ?>
+            </p>
           <?php endif; ?>
           <?php if(isset($item['#item']['field_ottawa_image_caption']['und'][0]['value'])): ?>
             <p><?php print $item['#item']['field_ottawa_image_caption']['und'][0]['value']; ?></p>
