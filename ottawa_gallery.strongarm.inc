@@ -29,7 +29,7 @@ function ottawa_gallery_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'entity_translation_settings_node__ott_gallery';
   $strongarm->value = array(
-    'default_language' => 'und',
+    'default_language' => 'xx-et-current',
     'hide_language_selector' => 1,
     'exclude_language_none' => 1,
     'lock_language' => 1,
@@ -68,6 +68,12 @@ function ottawa_gallery_strongarm() {
         'custom_settings' => FALSE,
       ),
       'eventsteaser' => array(
+        'custom_settings' => FALSE,
+      ),
+      'eventteaser' => array(
+        'custom_settings' => FALSE,
+      ),
+      'service_ottawa' => array(
         'custom_settings' => FALSE,
       ),
     ),
