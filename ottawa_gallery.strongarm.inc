@@ -76,6 +76,9 @@ function ottawa_gallery_strongarm() {
       'service_ottawa' => array(
         'custom_settings' => FALSE,
       ),
+      'service_teaser' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
