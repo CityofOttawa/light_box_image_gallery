@@ -17,7 +17,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" <?php print 'aria-label="Close the ' . $item['#item']['title'] . " image" . '"' ?>aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" <?php print 'aria-label="Close the ' . $item['#item']['title'] . " article" . '"' ?>aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <?php if(isset($item['#item']['field_file_image_title_text']['und'][0]['value'])): ?>
             <h4 class="modal-title"><?php print $item['#item']['field_file_image_title_text']['und'][0]['value']; ?></h4>
           <?php endif; ?>
