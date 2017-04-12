@@ -22,7 +22,7 @@ function ottawa_gallery_ctools_plugin_api($module = NULL, $api = NULL) {
 function ottawa_gallery_node_info() {
   $items = array(
     'ott_gallery' => array(
-      'name' => t('Gallery'),
+      'name' => t('Gallery Article'),
       'base' => 'node_content',
       'description' => t('This content type holds the "Gallery" content type - which allows a Gallery of images to be opened in a modal. '),
       'has_title' => '1',
