@@ -399,7 +399,7 @@ function ottawa_gallery_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ott_gallery_featured_image',
-    'label' => 'Featured Image',
+    'label' => 'Primary Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
