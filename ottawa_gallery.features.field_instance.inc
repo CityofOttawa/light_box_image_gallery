@@ -103,7 +103,7 @@ function ottawa_gallery_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -233,7 +233,7 @@ function ottawa_gallery_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -352,7 +352,7 @@ function ottawa_gallery_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -434,7 +434,7 @@ function ottawa_gallery_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 1,
+      'weight' => 4,
     ),
   );
 
