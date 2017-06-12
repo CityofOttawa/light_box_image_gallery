@@ -114,6 +114,12 @@ function ottawa_gallery_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'article teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
