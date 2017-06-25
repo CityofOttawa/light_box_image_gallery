@@ -203,8 +203,8 @@ function ottawa_gallery_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'article_ckeditor' => 0,
-          'page_ckeditor' => 'page_ckeditor',
+          'article_ckeditor' => 'article_ckeditor',
+          'page_ckeditor' => 0,
           'plain_text' => 0,
         ),
         'allowed_formats_toggle' => 1,
@@ -316,9 +316,9 @@ function ottawa_gallery_field_default_field_instances() {
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
-          'article_ckeditor' => 0,
+          'article_ckeditor' => 'article_ckeditor',
           'long_page_ckeditor' => 0,
-          'page_ckeditor' => 'page_ckeditor',
+          'page_ckeditor' => 0,
           'plain_text' => 0,
         ),
         'allowed_formats_toggle' => 1,
