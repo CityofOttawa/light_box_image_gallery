@@ -373,7 +373,7 @@ function ottawa_gallery_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
-          'image_link' => 'content',
+          'image_link' => '',
           'image_style' => 'primary_image_teaser',
           'linked_field' => array(
             'advanced' => array(
@@ -467,8 +467,8 @@ function ottawa_gallery_field_default_field_instances() {
             'linked' => 0,
           ),
           'title_class' => '',
-          'title_link' => '',
-          'title_style' => 'h2',
+          'title_link' => 'content',
+          'title_style' => 'h3',
         ),
         'type' => 'title_linked',
         'weight' => 1,
