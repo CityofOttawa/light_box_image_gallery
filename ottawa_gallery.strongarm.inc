@@ -53,7 +53,7 @@ function ottawa_gallery_strongarm() {
         'custom_settings' => TRUE,
       ),
       'embed' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
