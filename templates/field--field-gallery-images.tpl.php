@@ -9,8 +9,8 @@ $nid = $element['#object']->nid;
   <?php
   $image_target = $nid . '-' . $delta;
   ?>
-  <?php if (isset($item['#item']['uri'])): ?>
-        <button type="button" class="toggle-button" data-toggle="modal"
+  <?php if (isset($item['#item']['uri']) && isset($item['#item']['alt'])): ?>
+        <button aria-label="<?php print t('Open @alt', ['@alt' => $item['#item']['alt']]); ?>" type="button" class="toggle-button" data-toggle="modal"
                 data-target="#<?php print $image_target; ?>">
           <?php
           try {
